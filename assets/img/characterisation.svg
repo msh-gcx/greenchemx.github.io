@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="ch-title ch-desc">
+  <title id="ch-title">Analytical characterisation: diffraction pattern, spectrum and thermal trace</title>
+  <desc id="ch-desc">Abstract technical illustration combining an electron diffraction reciprocal lattice, an X-ray diffraction intensity spectrum with indexed reflections, and a differential scanning calorimetry thermal trace.</desc>
+
+  <defs>
+    <linearGradient id="ch-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+    <radialGradient id="ch-spot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="currentColor" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#ch-bg)"/>
+
+  <!-- Reciprocal lattice / SAED pattern -->
+  <g transform="translate(230 190)">
+    <g fill="none" stroke="currentColor" stroke-opacity="0.14">
+      <circle r="52"/><circle r="104"/><circle r="156"/>
+    </g>
+    <g fill="url(#ch-spot)">
+      <circle r="14"/>
+      <circle cx="52" cy="0" r="9"/><circle cx="-52" cy="0" r="9"/>
+      <circle cx="0" cy="52" r="9"/><circle cx="0" cy="-52" r="9"/>
+      <circle cx="37" cy="37" r="7"/><circle cx="-37" cy="37" r="7"/>
+      <circle cx="37" cy="-37" r="7"/><circle cx="-37" cy="-37" r="7"/>
+      <circle cx="104" cy="0" r="6"/><circle cx="-104" cy="0" r="6"/>
+      <circle cx="0" cy="104" r="6"/><circle cx="0" cy="-104" r="6"/>
+      <circle cx="74" cy="74" r="5"/><circle cx="-74" cy="74" r="5"/>
+      <circle cx="74" cy="-74" r="5"/><circle cx="-74" cy="-74" r="5"/>
+      <circle cx="156" cy="0" r="4"/><circle cx="-156" cy="0" r="4"/>
+      <circle cx="0" cy="156" r="4"/><circle cx="0" cy="-156" r="4"/>
+      <circle cx="110" cy="110" r="3.5"/><circle cx="-110" cy="110" r="3.5"/>
+      <circle cx="110" cy="-110" r="3.5"/><circle cx="-110" cy="-110" r="3.5"/>
+    </g>
+    <!-- g-vector -->
+    <g stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5">
+      <path d="M0 0 52 -52"/>
+    </g>
+    <text x="60" y="-56" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" fill="currentColor" fill-opacity="0.65">g(111)</text>
+    <text x="-170" y="188" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.5">SAED &#183; [110] ZONE AXIS</text>
+  </g>
+
+  <!-- XRD spectrum -->
+  <g transform="translate(452 96)">
+    <path d="M0 200h316M0 200V0" stroke="currentColor" stroke-opacity="0.3" stroke-width="1"/>
+    <g stroke="currentColor" stroke-opacity="0.1" stroke-width="1">
+      <path d="M0 50h316M0 100h316M0 150h316"/>
+    </g>
+    <path d="M0 196 22 194 30 40 38 194 62 192 76 190 84 112 92 190 118 188 140 186 150 74 158 186 186 184 208 182 216 138 224 182 250 180 272 178 280 150 288 178 316 176"
+          fill="none" stroke="currentColor" stroke-opacity="0.8" stroke-width="2" stroke-linejoin="round"/>
+    <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" fill="currentColor" fill-opacity="0.6" text-anchor="middle">
+      <text x="34" y="30">(111)</text>
+      <text x="88" y="102">(200)</text>
+      <text x="154" y="64">(220)</text>
+      <text x="220" y="128">(311)</text>
+    </g>
+    <text x="0" y="-10" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.5">XRD &#183; INTENSITY vs 2&#952;</text>
+    <text x="316" y="218" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.2" fill="currentColor" fill-opacity="0.4">80&#176;</text>
+    <text x="0" y="218" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.2" fill="currentColor" fill-opacity="0.4">20&#176;</text>
+  </g>
+
+  <!-- DSC thermal trace -->
+  <g transform="translate(452 400)">
+    <path d="M0 130h316M0 130V0" stroke="currentColor" stroke-opacity="0.3" stroke-width="1"/>
+    <path d="M0 46C 40 46 62 48 82 62s 26 42 44 42 30-40 46-40 34 6 48 4 34-46 52-46 26 14 44 18"
+          fill="none" stroke="currentColor" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+    <g stroke="currentColor" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="4 4">
+      <path d="M126 104V0M232 22V130"/>
+    </g>
+    <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" fill="currentColor" fill-opacity="0.6">
+      <text x="132" y="18">Tg</text>
+      <text x="238" y="122">Tm</text>
+    </g>
+    <text x="0" y="-10" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.5">DSC &#183; HEAT FLOW</text>
+  </g>
+
+  <!-- Corner registration marks -->
+  <g stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5">
+    <path d="M40 40h26M40 40v26M760 560h-26M760 560v-26"/>
+  </g>
+</svg>

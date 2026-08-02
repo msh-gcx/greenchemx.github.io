@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="rl-title rl-desc">
+  <title id="rl-title">Reliability engineering: Weibull plot, Arrhenius acceleration and fault tree</title>
+  <desc id="rl-desc">Abstract technical illustration combining a Weibull probability plot of time to failure, an Arrhenius life&#8211;stress acceleration line, and a fault-tree branch decomposing a top-level failure mode.</desc>
+
+  <defs>
+    <linearGradient id="rl-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#rl-bg)"/>
+
+  <!-- Weibull probability plot -->
+  <g transform="translate(64 74)">
+    <path d="M0 250h300M0 250V0" stroke="currentColor" stroke-opacity="0.32" stroke-width="1.5"/>
+    <g stroke="currentColor" stroke-opacity="0.1" stroke-width="1">
+      <path d="M0 50h300M0 100h300M0 150h300M0 200h300"/>
+      <path d="M60 0v250M120 0v250M180 0v250M240 0v250"/>
+    </g>
+    <!-- Median rank regression line -->
+    <path d="M22 232 282 30" stroke="currentColor" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- 90% confidence bounds -->
+    <path d="M22 250 282 52" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <path d="M22 214 282 10" stroke="currentColor" stroke-opacity="0.28" stroke-width="1.5" stroke-dasharray="6 5"/>
+    <!-- Failure data points -->
+    <g fill="currentColor" fill-opacity="0.85">
+      <circle cx="36" cy="224" r="4"/><circle cx="64" cy="206" r="4"/><circle cx="92" cy="182" r="4"/>
+      <circle cx="118" cy="168" r="4"/><circle cx="146" cy="142" r="4"/><circle cx="176" cy="122" r="4"/>
+      <circle cx="204" cy="98" r="4"/><circle cx="232" cy="72" r="4"/><circle cx="262" cy="50" r="4"/>
+    </g>
+    <text x="0" y="-12" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.5">WEIBULL &#183; &#946; 2.4 &#183; &#951; 4180 h</text>
+    <text x="300" y="270" text-anchor="end" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.2" fill="currentColor" fill-opacity="0.4">ln t</text>
+  </g>
+
+  <!-- Arrhenius acceleration -->
+  <g transform="translate(440 74)">
+    <path d="M0 250h296M0 250V0" stroke="currentColor" stroke-opacity="0.32" stroke-width="1.5"/>
+    <g stroke="currentColor" stroke-opacity="0.1" stroke-width="1">
+      <path d="M0 62h296M0 124h296M0 186h296"/>
+    </g>
+    <path d="M20 216 276 44" stroke="currentColor" stroke-opacity="0.75" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="currentColor" fill-opacity="0.85">
+      <circle cx="44" cy="200" r="5"/><circle cx="118" cy="150" r="5"/>
+      <circle cx="192" cy="100" r="5"/><circle cx="256" cy="58" r="5"/>
+    </g>
+    <g stroke="currentColor" stroke-opacity="0.3" stroke-width="1" stroke-dasharray="4 4">
+      <path d="M44 200v50M118 150v100M192 100v150M256 58v192"/>
+    </g>
+    <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" fill="currentColor" fill-opacity="0.55" text-anchor="middle">
+      <text x="44" y="268">125&#176;C</text>
+      <text x="118" y="268">105&#176;C</text>
+      <text x="192" y="268">85&#176;C</text>
+      <text x="256" y="268">65&#176;C</text>
+    </g>
+    <text x="0" y="-12" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.5">ARRHENIUS &#183; Ea 0.72 eV</text>
+  </g>
+
+  <!-- Fault tree -->
+  <g transform="translate(64 392)">
+    <rect x="228" y="0" width="216" height="42" rx="3" fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="336" y="26" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1" fill="currentColor" fill-opacity="0.8">FIELD RETURN</text>
+
+    <!-- AND gate -->
+    <path d="M320 42v22h-1a17 17 0 0 0 34 0h-1V42z" fill="none" stroke="currentColor" stroke-opacity="0.6" stroke-width="1.5"/>
+    <path d="M336 81v25M100 106h472M100 106v30M336 106v30M572 106v30"
+          fill="none" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.5"/>
+
+    <g stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5" fill="none">
+      <rect x="8" y="136" width="184" height="40" rx="3"/>
+      <rect x="244" y="136" width="184" height="40" rx="3"/>
+      <rect x="480" y="136" width="184" height="40" rx="3"/>
+    </g>
+    <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="0.8" fill="currentColor" fill-opacity="0.65" text-anchor="middle">
+      <text x="100" y="161">MOISTURE INGRESS</text>
+      <text x="336" y="161">CTE MISMATCH</text>
+      <text x="572" y="161">INTERFACE VOID</text>
+    </g>
+
+    <!-- Basic events -->
+    <g fill="none" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5">
+      <path d="M100 176v22M336 176v22M572 176v22"/>
+      <circle cx="100" cy="212" r="14"/>
+      <circle cx="336" cy="212" r="14"/>
+      <circle cx="572" cy="212" r="14"/>
+    </g>
+    <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="9" fill="currentColor" fill-opacity="0.7" text-anchor="middle">
+      <text x="100" y="216">B1</text><text x="336" y="216">B2</text><text x="572" y="216">B3</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="batt-title batt-desc" preserveAspectRatio="xMidYMid slice">
+  <title id="batt-title">Lithium-ion electrode stack with particle microstructure and voltage curve</title>
+  <desc id="batt-desc">Abstract technical illustration of a cell cross-section: aluminium current collector, cathode active-material particles, separator, graphite anode, copper collector, lithium-ion transport arrows, and a discharge voltage profile.</desc>
+
+  <defs>
+    <linearGradient id="bt-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+    <pattern id="bt-cam" width="34" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="9" cy="8" r="7.5" fill="currentColor" fill-opacity="0.30"/>
+      <circle cx="26" cy="20" r="9.5" fill="currentColor" fill-opacity="0.22"/>
+      <circle cx="6" cy="24" r="4.5" fill="currentColor" fill-opacity="0.34"/>
+      <circle cx="28" cy="4" r="3.5" fill="currentColor" fill-opacity="0.26"/>
+    </pattern>
+    <pattern id="bt-graphite" width="30" height="14" patternUnits="userSpaceOnUse">
+      <rect x="2" y="2" width="26" height="4.5" rx="2" fill="currentColor" fill-opacity="0.26"/>
+      <rect x="6" y="9" width="20" height="3.5" rx="1.75" fill="currentColor" fill-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bt-bg)"/>
+
+  <!-- Layer stack -->
+  <g>
+    <!-- Al current collector -->
+    <rect x="70" y="70" width="660" height="20" fill="currentColor" fill-opacity="0.62"/>
+    <!-- Cathode -->
+    <rect x="70" y="90" width="660" height="86" fill="currentColor" fill-opacity="0.08"/>
+    <rect x="70" y="90" width="660" height="86" fill="url(#bt-cam)"/>
+    <!-- Separator -->
+    <rect x="70" y="176" width="660" height="26" fill="currentColor" fill-opacity="0.05"/>
+    <g stroke="currentColor" stroke-opacity="0.28" stroke-width="1">
+      <path d="M70 182h660M70 189h660M70 196h660"/>
+    </g>
+    <!-- Anode -->
+    <rect x="70" y="202" width="660" height="80" fill="currentColor" fill-opacity="0.07"/>
+    <rect x="70" y="202" width="660" height="80" fill="url(#bt-graphite)"/>
+    <!-- Cu current collector -->
+    <rect x="70" y="282" width="660" height="20" fill="currentColor" fill-opacity="0.62"/>
+    <rect x="70" y="70" width="660" height="232" fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-width="1.5"/>
+  </g>
+
+  <!-- Li+ transport -->
+  <g stroke="currentColor" stroke-opacity="0.8" stroke-width="1.8" fill="none" stroke-linecap="round">
+    <path d="M200 168 200 210" marker-end="url(#bt-arrow)"/>
+    <path d="M340 168 340 210" marker-end="url(#bt-arrow)"/>
+    <path d="M480 168 480 210" marker-end="url(#bt-arrow)"/>
+    <path d="M620 168 620 210" marker-end="url(#bt-arrow)"/>
+  </g>
+  <defs>
+    <marker id="bt-arrow" viewBox="0 0 8 8" refX="5" refY="4" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0 0 8 4 0 8z" fill="currentColor" fill-opacity="0.85"/>
+    </marker>
+  </defs>
+  <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" fill="currentColor" fill-opacity="0.8">
+    <text x="208" y="196">Li&#8314;</text><text x="348" y="196">Li&#8314;</text>
+    <text x="488" y="196">Li&#8314;</text><text x="628" y="196">Li&#8314;</text>
+  </g>
+
+  <!-- Layer labels -->
+  <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.3" fill="currentColor" fill-opacity="0.55" text-anchor="end">
+    <text x="58" y="85">Al</text>
+    <text x="58" y="138">CATHODE</text>
+    <text x="58" y="193">SEPARATOR</text>
+    <text x="58" y="247">ANODE</text>
+    <text x="58" y="297">Cu</text>
+  </g>
+
+  <!-- Coating thickness callout -->
+  <g stroke="currentColor" stroke-opacity="0.45" stroke-width="1">
+    <path d="M752 90v86M746 90h12M746 176h12"/>
+  </g>
+  <text x="766" y="138" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.2" fill="currentColor" fill-opacity="0.55" transform="rotate(-90 766 138)" text-anchor="middle">72 &#181;m</text>
+
+  <!-- Discharge voltage profile -->
+  <g transform="translate(70 356)">
+    <path d="M0 96h660M0 96V0" stroke="currentColor" stroke-opacity="0.28" stroke-width="1"/>
+    <g stroke="currentColor" stroke-opacity="0.12" stroke-width="1">
+      <path d="M0 24h660M0 48h660M0 72h660"/>
+    </g>
+    <path d="M0 14C 70 22 150 30 300 34s 240 8 300 24c 30 8 48 20 60 32"
+          fill="none" stroke="currentColor" stroke-opacity="0.8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M0 34C 70 42 150 50 290 54s 230 10 290 26c 30 8 60 14 80 16"
+          fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round"/>
+    <text x="0" y="-10" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.4" fill="currentColor" fill-opacity="0.55">CELL VOLTAGE &#183; CYCLE 1 / CYCLE 800</text>
+  </g>
+</svg>

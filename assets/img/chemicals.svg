@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="chem-title chem-desc" preserveAspectRatio="xMidYMid slice">
+  <title id="chem-title">Process flow diagram with reactor, separation column and molecular structure</title>
+  <desc id="chem-desc">Abstract technical illustration of a chemical process: feed streams, stirred reactor, heat exchanger, distillation column with trays, recycle loop, and an aromatic molecular skeleton overlay.</desc>
+
+  <defs>
+    <linearGradient id="cx-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+    <marker id="cx-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 10 5 0 10z" fill="currentColor" fill-opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cx-bg)"/>
+
+  <!-- Faint engineering grid -->
+  <g stroke="currentColor" stroke-opacity="0.06" stroke-width="1">
+    <path d="M0 62h800M0 124h800M0 186h800M0 248h800M0 310h800M0 372h800M0 434h800"/>
+    <path d="M64 0v500M128 0v500M192 0v500M256 0v500M320 0v500M384 0v500M448 0v500M512 0v500M576 0v500M640 0v500M704 0v500"/>
+  </g>
+
+  <!-- Feed lines -->
+  <g fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" marker-end="url(#cx-arrow)">
+    <path d="M24 150h96"/>
+    <path d="M24 214h96"/>
+  </g>
+  <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.2" fill="currentColor" fill-opacity="0.5">
+    <text x="24" y="140">FEED A</text>
+    <text x="24" y="204">FEED B</text>
+  </g>
+
+  <!-- Stirred reactor -->
+  <rect x="124" y="112" width="132" height="146" rx="8" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-opacity="0.55" stroke-width="2"/>
+  <path d="M190 96v58" stroke="currentColor" stroke-opacity="0.6" stroke-width="3"/>
+  <path d="M164 154h52M170 172h40" stroke="currentColor" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="190" cy="96" r="10" fill="none" stroke="currentColor" stroke-opacity="0.6" stroke-width="2"/>
+  <g stroke="currentColor" stroke-opacity="0.25" stroke-width="1.5">
+    <path d="M140 210q 25 -12 50 0t 50 0"/>
+    <path d="M140 228q 25 -12 50 0t 50 0"/>
+  </g>
+  <text x="190" y="278" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.3" fill="currentColor" fill-opacity="0.6">R-101</text>
+
+  <!-- Reactor to exchanger -->
+  <path d="M256 186h64" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" marker-end="url(#cx-arrow)"/>
+
+  <!-- Heat exchanger -->
+  <rect x="324" y="158" width="84" height="56" rx="4" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2"/>
+  <path d="M332 186h16l8-14 12 28 12-28 8 14h20" fill="none" stroke="currentColor" stroke-opacity="0.6" stroke-width="2"/>
+  <text x="366" y="234" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.3" fill="currentColor" fill-opacity="0.6">E-201</text>
+
+  <!-- Exchanger to column -->
+  <path d="M408 186h58" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" marker-end="url(#cx-arrow)"/>
+
+  <!-- Distillation column -->
+  <rect x="470" y="70" width="86" height="300" rx="43" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.6" stroke-width="2"/>
+  <g stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5">
+    <path d="M478 108h70M478 140h70M478 172h70M478 204h70M478 236h70M478 268h70M478 300h70M478 332h70"/>
+  </g>
+  <text x="513" y="392" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.3" fill="currentColor" fill-opacity="0.6">T-301</text>
+
+  <!-- Overhead + bottoms -->
+  <path d="M513 70V44h150v52" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" marker-end="url(#cx-arrow)"/>
+  <path d="M513 370v38h180" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2" marker-end="url(#cx-arrow)"/>
+  <g font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.2" fill="currentColor" fill-opacity="0.5">
+    <text x="676" y="92">DISTILLATE</text>
+    <text x="700" y="428" text-anchor="end">BOTTOMS</text>
+  </g>
+
+  <!-- Recycle loop -->
+  <path d="M600 96v92H190v-76" fill="none" stroke="currentColor" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="6 5" marker-end="url(#cx-arrow)"/>
+  <text x="400" y="180" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.2" fill="currentColor" fill-opacity="0.4">RECYCLE</text>
+
+  <!-- Aromatic molecular overlay -->
+  <g transform="translate(636 268)" fill="none" stroke="currentColor" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round">
+    <path d="M0 -34 29 -17 29 17 0 34 -29 17 -29 -17z"/>
+    <path d="M0 -22 19 -11 19 11" stroke-opacity="0.24"/>
+    <path d="M0 -34v-26M29 -17l24 -14M29 17l24 14"/>
+    <circle cx="0" cy="-60" r="6" fill="currentColor" fill-opacity="0.25" stroke-opacity="0.5"/>
+    <circle cx="53" cy="-31" r="6" fill="currentColor" fill-opacity="0.25" stroke-opacity="0.5"/>
+    <circle cx="53" cy="31" r="6" fill="currentColor" fill-opacity="0.25" stroke-opacity="0.5"/>
+  </g>
+</svg>

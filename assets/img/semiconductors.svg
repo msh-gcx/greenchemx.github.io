@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="semi-title semi-desc" preserveAspectRatio="xMidYMid slice">
+  <title id="semi-title">Silicon wafer with die grid and edge exclusion zone</title>
+  <desc id="semi-desc">Abstract technical illustration of a patterned 300&#160;millimetre wafer, showing a rectangular die array, notch orientation mark, and concentric thin-film interference rings.</desc>
+
+  <defs>
+    <radialGradient id="semi-sheen" cx="36%" cy="30%" r="78%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.30"/>
+      <stop offset="45%" stop-color="currentColor" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.03"/>
+    </radialGradient>
+    <linearGradient id="semi-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+    <clipPath id="semi-wafer">
+      <circle cx="400" cy="250" r="196"/>
+    </clipPath>
+    <pattern id="semi-die" width="46" height="34" patternUnits="userSpaceOnUse">
+      <rect x="1.5" y="1.5" width="43" height="31" fill="none" stroke="currentColor" stroke-opacity="0.34" stroke-width="1"/>
+      <rect x="7" y="6" width="14" height="8" fill="currentColor" fill-opacity="0.16"/>
+      <rect x="7" y="18" width="24" height="3" fill="currentColor" fill-opacity="0.12"/>
+      <rect x="25" y="6" width="13" height="14" fill="currentColor" fill-opacity="0.09"/>
+      <rect x="7" y="25" width="31" height="2" fill="currentColor" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#semi-bg)"/>
+
+  <!-- Reticle field alignment grid -->
+  <g stroke="currentColor" stroke-opacity="0.07" stroke-width="1">
+    <path d="M0 100h800M0 180h800M0 260h800M0 340h800M0 420h800"/>
+    <path d="M120 0v500M240 0v500M360 0v500M480 0v500M600 0v500M720 0v500"/>
+  </g>
+
+  <!-- Wafer body -->
+  <circle cx="400" cy="250" r="196" fill="url(#semi-sheen)"/>
+  <g clip-path="url(#semi-wafer)">
+    <rect x="196" y="46" width="408" height="408" fill="url(#semi-die)"/>
+    <!-- Thin-film interference rings -->
+    <g fill="none" stroke="currentColor" stroke-opacity="0.16">
+      <circle cx="400" cy="250" r="60"/>
+      <circle cx="400" cy="250" r="96"/>
+      <circle cx="400" cy="250" r="132"/>
+      <circle cx="400" cy="250" r="168"/>
+    </g>
+    <!-- Scan sweep -->
+    <path d="M204 250h392" stroke="currentColor" stroke-opacity="0.45" stroke-width="1.5"/>
+  </g>
+
+  <!-- Edge exclusion + wafer edge -->
+  <circle cx="400" cy="250" r="196" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="2"/>
+  <circle cx="400" cy="250" r="180" fill="none" stroke="currentColor" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="4 5"/>
+
+  <!-- Orientation notch -->
+  <path d="M389 55a196 196 0 0 1 22 0l-11 17z" fill="currentColor" fill-opacity="0.85"/>
+
+  <!-- Measurement callout -->
+  <g stroke="currentColor" stroke-opacity="0.5" stroke-width="1">
+    <path d="M204 446h392"/>
+    <path d="M204 440v12M596 440v12"/>
+  </g>
+  <text x="400" y="472" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="13" letter-spacing="1.6" fill="currentColor" fill-opacity="0.65">300 mm</text>
+
+  <!-- Die-level detail callout -->
+  <g transform="translate(614 84)">
+    <circle cx="0" cy="0" r="3" fill="currentColor" fill-opacity="0.8"/>
+    <path d="M0 0 54 -34" stroke="currentColor" stroke-opacity="0.4" stroke-width="1"/>
+    <rect x="54" y="-66" width="86" height="34" fill="none" stroke="currentColor" stroke-opacity="0.45"/>
+    <path d="M62 -58h20M62 -52h48M62 -46h32M62 -40h56" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+  </g>
+</svg>

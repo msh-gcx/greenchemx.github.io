@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GreenChemX — Technical Consulting in Materials Science, Chemistry &amp; Chemical Engineering</title>
+<meta name="description" content="Independent technical consultancy for semiconductor, photovoltaic, battery, specialty chemical, adhesive and composite manufacturers. Failure analysis, formulation, process scale-up and reliability engineering.">
+<meta name="theme-color" content="#071319">
+<link rel="canonical" href="https://greenchemx.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="GreenChemX — Technical Consulting in Materials Science &amp; Chemical Engineering">
+<meta property="og:description" content="The technical team manufacturers call when the material is the problem. Failure analysis, formulation, scale-up and reliability across semiconductors, PV, batteries, chemicals, adhesives and composites.">
+<meta property="og:url" content="https://greenchemx.com/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23071319'/%3E%3Cpath d='M16 6 26 12v12l-10 6-10-6V12z' fill='none' stroke='%2334d399' stroke-width='2'/%3E%3Ccircle cx='16' cy='18' r='3' fill='%2334d399'/%3E%3C/svg%3E">
+
+<script>
+  // Applied before first paint so the theme never flashes, and marks the
+  // document as scripted so scroll-reveal only hides what it can un-hide.
+  (function () {
+    document.documentElement.classList.add('has-js');
+    try {
+      var stored = localStorage.getItem('gcx-theme');
+      var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "GreenChemX",
+  "description": "Independent technical consultancy in materials science, chemistry and chemical engineering.",
+  "url": "https://greenchemx.com/",
+  "email": "enquiries@greenchemx.com",
+  "areaServed": "Worldwide",
+  "knowsAbout": [
+    "Materials science",
+    "Semiconductor process integration",
+    "Photovoltaic device engineering",
+    "Lithium-ion battery materials",
+    "Specialty chemical formulation",
+    "Adhesives and sealants",
+    "Polymer matrix composites",
+    "Failure analysis",
+    "Process scale-up"
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" data-nav-root>
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3 28 10v14L16 31 4 24V10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M16 3v10M28 10l-12 7M4 10l12 7M16 17v14" stroke="currentColor" stroke-width="1.1" stroke-opacity=".45"/>
+          <circle cx="16" cy="17" r="3.4" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">GreenChem<em>X</em></span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+        <li class="nav__item">
+          <button class="nav__link nav__trigger" type="button" data-menu-trigger="capabilities"
+                  aria-expanded="false" aria-controls="menu-capabilities">Capabilities <svg class="nav__chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        </li>
+        <li class="nav__item">
+          <button class="nav__link nav__trigger" type="button" data-menu-trigger="industries"
+                  aria-expanded="false" aria-controls="menu-industries">Industries <svg class="nav__chev" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        </li>
+        <li><a class="nav__link" href="about.html">About</a></li>
+        <li><a class="nav__link" href="insights.html">Insights</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme">
+          <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>
+          </svg>
+        </button>
+        <a class="btn btn--primary nav__cta" href="contact.html">Start a conversation</a>
+        <button class="icon-btn nav__toggle" type="button" data-nav-open aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="megamenu" id="menu-capabilities" data-menu-panel="capabilities" hidden>
+    <div class="container megamenu__inner">
+        <div class="megamenu__col">
+          <p class="megamenu__label" id="mm-cap">Capabilities</p>
+          <ul class="megamenu__list" aria-labelledby="mm-cap">
+            <li>
+              <a class="mm-item" href="capabilities.html#failure-analysis">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/><path d="M7.5 10.5h6M10.5 7.5v6" stroke-opacity=".5"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Failure &amp; root-cause analysis</span>
+                  <span class="mm-item__desc">Find the mechanism, then prove it</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="capabilities.html#formulation">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="17.5" r="2.4"/><path d="M8.2 8.3 10.5 15.4M15.8 8.3 13.5 15.4M8.4 7h7.2"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Formulation &amp; materials selection</span>
+                  <span class="mm-item__desc">Fewer experiments, better ones</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="capabilities.html#scale-up">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h4v-7H4zM10 19h4V8h-4zM16 19h4V4h-4z"/><path d="M2 21.5h20" stroke-opacity=".5"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Process &amp; scale-up engineering</span>
+                  <span class="mm-item__desc">Close the bench-to-plant gap</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="capabilities.html#reliability">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 20.5 6v6.5c0 4.9-3.4 8.3-8.5 9.6-5.1-1.3-8.5-4.7-8.5-9.6V6z"/><path d="m8.6 12 2.4 2.4 4.4-4.6"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Reliability &amp; qualification</span>
+                  <span class="mm-item__desc">Tests that predict something real</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="megamenu__col">
+          <p class="megamenu__label" id="mm-eng">How we engage</p>
+          <ul class="megamenu__list" aria-labelledby="mm-eng">
+            <li>
+              <a class="mm-item" href="capabilities.html#engagement-models">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="5" rx="1.4"/><rect x="3" y="11" width="18" height="5" rx="1.4"/><path d="M6.5 19.5h11"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Engagement models</span>
+                  <span class="mm-item__desc">Three ways to work with us</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="capabilities.html#practicalities">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .9-1 1.7"/><path d="M12 17h.01"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Practicalities</span>
+                  <span class="mm-item__desc">Laboratories, IP, confidentiality</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="about.html#terms">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5" stroke-opacity=".6"/><path d="M9 12h6M9 16h6" stroke-opacity=".6"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Engagement terms</span>
+                  <span class="mm-item__desc">What you can hold us to</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="megamenu__promo">
+          <h3>Not sure which you need?</h3>
+          <p>Describe the symptom. Working out which capability applies is our job, and we will tell you honestly if the answer is none of them.</p>
+          <p><a class="link" href="contact.html">Describe your problem
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a></p>
+        </div>
+    </div>
+  </div>
+
+  <div class="megamenu" id="menu-industries" data-menu-panel="industries" hidden>
+    <div class="container megamenu__inner">
+        <div class="megamenu__col">
+          <p class="megamenu__label" id="mm-ind-0">Electronics &amp; energy</p>
+          <ul class="megamenu__list" aria-labelledby="mm-ind-0">
+            <li>
+              <a class="mm-item" href="industries.html#semiconductors" style="--sector: var(--sig-semi)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="13" height="13" rx="1.6"/><rect x="9.5" y="9.5" width="5" height="5" rx=".8"/><path d="M9 2.5v3M15 2.5v3M9 18.5v3M15 18.5v3M2.5 9h3M2.5 15h3M18.5 9h3M18.5 15h3" stroke-opacity=".65"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Semiconductors</span>
+                  <span class="mm-item__desc">Yield, thin films, packaging stress</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="industries.html#photovoltaics" style="--sector: var(--sig-solar)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 14.5h17l-2-8.5h-13z"/><path d="M12 6v8.5M8.4 6 7.2 14.5M15.6 6l1.2 8.5M4.6 10.2h14.8" stroke-opacity=".6"/><path d="M12 14.5v6M9 20.5h6"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Solar &amp; photovoltaics</span>
+                  <span class="mm-item__desc">Degradation, encapsulants, PID</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="megamenu__col">
+          <p class="megamenu__label" id="mm-ind-1">Storage &amp; chemistry</p>
+          <ul class="megamenu__list" aria-labelledby="mm-ind-1">
+            <li>
+              <a class="mm-item" href="industries.html#batteries" style="--sector: var(--sig-batt)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="16.5" height="10" rx="2"/><path d="M21.8 10.2v3.6"/><path d="M11.4 9.4 8.8 12.6h3.4l-2.4 3.2"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Batteries &amp; energy storage</span>
+                  <span class="mm-item__desc">Capacity fade, coating, safety</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="industries.html#chemicals" style="--sector: var(--sig-chem)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.2 2.8h5.6"/><path d="M10.2 2.8v6.4L5 18a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5.2-8.8V2.8"/><path d="M7.6 15.2h8.8" stroke-opacity=".6"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Specialty chemicals</span>
+                  <span class="mm-item__desc">Impurities, scale-up, crystallisation</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="megamenu__col">
+          <p class="megamenu__label" id="mm-ind-2">Interfaces &amp; structures</p>
+          <ul class="megamenu__list" aria-labelledby="mm-ind-2">
+            <li>
+              <a class="mm-item" href="industries.html#adhesives" style="--sector: var(--sig-adhesive)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="3.6" rx="1"/><rect x="3" y="16.9" width="18" height="3.6" rx="1"/><path d="M12 7.1c-1.9 2-2.9 3.2-2.9 4.6a2.9 2.9 0 0 0 5.8 0c0-1.4-1-2.6-2.9-4.6z"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Adhesives &amp; coatings</span>
+                  <span class="mm-item__desc">Surface prep, cure, durability</span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="mm-item" href="industries.html#composites" style="--sector: var(--sig-composite)">
+                <span class="mm-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 2.5 7.4 12 12l9.5-4.6z"/><path d="M2.5 12 12 16.6 21.5 12" stroke-opacity=".7"/><path d="M2.5 16.6 12 21.2l9.5-4.6" stroke-opacity=".45"/></svg></span>
+                <span>
+                  <span class="mm-item__title">Composites</span>
+                  <span class="mm-item__desc">Porosity, cure cycle, joints</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__head">
+    <span class="brand">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3 28 10v14L16 31 4 24V10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <circle cx="16" cy="17" r="3.4" fill="currentColor"/>
+        </svg>
+        <span class="brand__name">GreenChem<em>X</em></span>
+    </span>
+    <button class="icon-btn" type="button" data-nav-close aria-label="Close menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Mobile">
+    <a class="mobile-nav__link" href="index.html" aria-current="page">Home</a>
+    <details class="mobile-nav__group">
+      <summary class="mobile-nav__link">Capabilities <svg class="mobile-nav__chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul class="mobile-nav__sub">
+        <li><a href="capabilities.html#failure-analysis"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/><path d="M7.5 10.5h6M10.5 7.5v6" stroke-opacity=".5"/></svg><span>Failure &amp; root-cause analysis</span></a></li>
+        <li><a href="capabilities.html#formulation"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2.4"/><circle cx="18" cy="7" r="2.4"/><circle cx="12" cy="17.5" r="2.4"/><path d="M8.2 8.3 10.5 15.4M15.8 8.3 13.5 15.4M8.4 7h7.2"/></svg><span>Formulation &amp; materials selection</span></a></li>
+        <li><a href="capabilities.html#scale-up"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19h4v-7H4zM10 19h4V8h-4zM16 19h4V4h-4z"/><path d="M2 21.5h20" stroke-opacity=".5"/></svg><span>Process &amp; scale-up engineering</span></a></li>
+        <li><a href="capabilities.html#reliability"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 20.5 6v6.5c0 4.9-3.4 8.3-8.5 9.6-5.1-1.3-8.5-4.7-8.5-9.6V6z"/><path d="m8.6 12 2.4 2.4 4.4-4.6"/></svg><span>Reliability &amp; qualification</span></a></li>
+        <li><a href="capabilities.html#engagement-models"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="5" rx="1.4"/><rect x="3" y="11" width="18" height="5" rx="1.4"/><path d="M6.5 19.5h11"/></svg><span>Engagement models</span></a></li>
+        <li><a href="capabilities.html#practicalities"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M9.6 9.4a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .9-1 1.7"/><path d="M12 17h.01"/></svg><span>Practicalities</span></a></li>
+        <li><a href="about.html#terms"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5" stroke-opacity=".6"/><path d="M9 12h6M9 16h6" stroke-opacity=".6"/></svg><span>Engagement terms</span></a></li>
+      </ul>
+    </details>
+    <details class="mobile-nav__group">
+      <summary class="mobile-nav__link">Industries <svg class="mobile-nav__chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <ul class="mobile-nav__sub">
+        <li><a href="industries.html#semiconductors" style="--sector: var(--sig-semi)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="5.5" width="13" height="13" rx="1.6"/><rect x="9.5" y="9.5" width="5" height="5" rx=".8"/><path d="M9 2.5v3M15 2.5v3M9 18.5v3M15 18.5v3M2.5 9h3M2.5 15h3M18.5 9h3M18.5 15h3" stroke-opacity=".65"/></svg><span>Semiconductors</span></a></li>
+        <li><a href="industries.html#photovoltaics" style="--sector: var(--sig-solar)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 14.5h17l-2-8.5h-13z"/><path d="M12 6v8.5M8.4 6 7.2 14.5M15.6 6l1.2 8.5M4.6 10.2h14.8" stroke-opacity=".6"/><path d="M12 14.5v6M9 20.5h6"/></svg><span>Solar &amp; photovoltaics</span></a></li>
+        <li><a href="industries.html#batteries" style="--sector: var(--sig-batt)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="16.5" height="10" rx="2"/><path d="M21.8 10.2v3.6"/><path d="M11.4 9.4 8.8 12.6h3.4l-2.4 3.2"/></svg><span>Batteries &amp; energy storage</span></a></li>
+        <li><a href="industries.html#chemicals" style="--sector: var(--sig-chem)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.2 2.8h5.6"/><path d="M10.2 2.8v6.4L5 18a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5.2-8.8V2.8"/><path d="M7.6 15.2h8.8" stroke-opacity=".6"/></svg><span>Specialty chemicals</span></a></li>
+        <li><a href="industries.html#adhesives" style="--sector: var(--sig-adhesive)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="3.6" rx="1"/><rect x="3" y="16.9" width="18" height="3.6" rx="1"/><path d="M12 7.1c-1.9 2-2.9 3.2-2.9 4.6a2.9 2.9 0 0 0 5.8 0c0-1.4-1-2.6-2.9-4.6z"/></svg><span>Adhesives &amp; coatings</span></a></li>
+        <li><a href="industries.html#composites" style="--sector: var(--sig-composite)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.8 2.5 7.4 12 12l9.5-4.6z"/><path d="M2.5 12 12 16.6 21.5 12" stroke-opacity=".7"/><path d="M2.5 16.6 12 21.2l9.5-4.6" stroke-opacity=".45"/></svg><span>Composites</span></a></li>
+      </ul>
+    </details>
+    <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link" href="insights.html">Insights</a>
+  </nav>
+
+  <a class="btn btn--primary btn--lg" href="contact.html">Start a conversation</a>
+  <p class="mobile-nav__meta">A senior engineer replies within two working days.</p>
+</div>
+
+<main id="main">
+
+  <!-- ===================================================================== -->
+  <!-- Hero                                                                  -->
+  <!-- ===================================================================== -->
+  <section class="hero">
+    <img class="hero__photo" src="assets/img/hero-molecule.webp" alt="" aria-hidden="true"
+         width="1600" height="873" fetchpriority="high" decoding="async">
+    <canvas class="hero__canvas" id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero__inner">
+        <div>
+          <p class="eyebrow eyebrow--inverse">Materials science &#183; Chemistry &#183; Chemical engineering</p>
+          <h1>Materials problems, <span class="emph">solved at the root.</span></h1>
+          <p class="hero__lede">
+            GreenChemX is an independent technical consultancy for manufacturers who have run
+            out of internal answers. We take on the failures, formulations and scale-up
+            problems that stall programmes &mdash; and we finish with evidence, not opinion.
+          </p>
+          <div class="btn-row hero__actions">
+            <a class="btn btn--primary btn--lg" href="contact.html">
+              Describe your problem
+              <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6"/>
+              </svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="capabilities.html">See how we work</a>
+          </div>
+        </div>
+
+        <dl class="hero__aside">
+          <div>
+            <dt>Response</dt>
+            <dd><strong>48 h</strong>A senior engineer reads your problem and replies &mdash; not a sales team.</dd>
+          </div>
+          <div>
+            <dt>First technical read</dt>
+            <dd><strong>10 days</strong>An initial hypothesis, a test plan and a written scope before you commit budget.</dd>
+          </div>
+          <div>
+            <dt>Typical engagement</dt>
+            <dd><strong>6&ndash;14 wks</strong>Fixed scope, fixed fee, named engineers. No open-ended retainers.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Credibility strip                                                     -->
+  <!-- ===================================================================== -->
+  <div class="credstrip">
+    <div class="container credstrip__inner">
+      <span class="credstrip__label">Sectors served</span>
+      <ul class="credstrip__items">
+        <li>Semiconductors</li>
+        <li>Photovoltaics</li>
+        <li>Energy storage</li>
+        <li>Specialty chemicals</li>
+        <li>Adhesives &amp; sealants</li>
+        <li>Composites</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- Capability pillars                                                    -->
+  <!-- ===================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--split" data-reveal>
+        <div>
+          <p class="eyebrow">What we are called in for</p>
+          <h2>Four kinds of problem, one way of working.</h2>
+        </div>
+        <p class="lede">
+          Most of our work arrives the same way: something measurable has gone wrong,
+          the internal team has exhausted the obvious causes, and a customer or a
+          launch date is now at risk.
+        </p>
+      </div>
+
+      <div class="grid grid--4" data-reveal-group>
+        <article class="card" data-reveal>
+          <svg class="card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="14" cy="14" r="9"/><path d="M20.5 20.5 28 28"/><path d="M10 14h8M14 10v8" stroke-opacity=".5"/>
+          </svg>
+          <span class="card__index" aria-hidden="true">01</span>
+          <h3>Failure &amp; root-cause analysis</h3>
+          <p>
+            Field returns, yield excursions, delamination, corrosion, unexplained
+            drift. We find the mechanism, then prove it.
+          </p>
+          <ul class="card__list">
+            <li>Physics-of-failure investigation</li>
+            <li>Analytical campaign design</li>
+            <li>Defensible technical reports</li>
+          </ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <svg class="card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 4v9L5 26a2 2 0 0 0 1.7 3h18.6A2 2 0 0 0 27 26l-8-13V4"/>
+            <path d="M11 4h10M10.5 19h11" stroke-opacity=".55"/>
+          </svg>
+          <span class="card__index" aria-hidden="true">02</span>
+          <h3>Formulation &amp; materials selection</h3>
+          <p>
+            New chemistry, reformulation under regulatory pressure, or a substitution
+            forced on you by a supply chain that moved.
+          </p>
+          <ul class="card__list">
+            <li>Design-of-experiments programmes</li>
+            <li>Raw material qualification</li>
+            <li>REACH / RoHS-driven reformulation</li>
+          </ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <svg class="card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 25h6V15H4zM13 25h6V9h-6zM22 25h6V4h-6z"/><path d="M2 29h28" stroke-opacity=".55"/>
+          </svg>
+          <span class="card__index" aria-hidden="true">03</span>
+          <h3>Process &amp; scale-up engineering</h3>
+          <p>
+            The chemistry worked at 200&#160;mL. It does not work at 2&#160;m&#179;.
+            We close the gap between bench, pilot and plant.
+          </p>
+          <ul class="card__list">
+            <li>Mixing, heat and mass transfer</li>
+            <li>Pilot trial design and supervision</li>
+            <li>Technology transfer packages</li>
+          </ul>
+        </article>
+
+        <article class="card" data-reveal>
+          <svg class="card__icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 3 27 8v9c0 6.6-4.6 11.1-11 13-6.4-1.9-11-6.4-11-13V8z"/>
+            <path d="m11.5 16 3.2 3.2L21 12.8"/>
+          </svg>
+          <span class="card__index" aria-hidden="true">04</span>
+          <h3>Reliability &amp; qualification</h3>
+          <p>
+            Accelerated life testing that predicts something real, and qualification
+            evidence that survives a customer audit.
+          </p>
+          <ul class="card__list">
+            <li>Accelerated ageing &amp; HALT design</li>
+            <li>Weibull and Arrhenius modelling</li>
+            <li>Standards-aligned test protocols</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Split: evidence                                                       -->
+  <!-- ===================================================================== -->
+  <section class="section section--subtle">
+    <div class="container">
+      <div class="split">
+        <div class="split__media" data-reveal>
+          <span class="art art--characterisation" role="img" aria-label="Composite of an electron diffraction pattern, an indexed X-ray diffraction spectrum and a differential scanning calorimetry trace."></span>
+          <span class="split__caption">SAED &#183; XRD &#183; DSC &mdash; converging on one mechanism</span>
+        </div>
+
+        <div class="stack stack--lg" data-reveal>
+          <div>
+            <p class="eyebrow">Method</p>
+            <h2>Evidence first. <span class="emph">Opinion last.</span></h2>
+          </div>
+          <p class="lede">
+            Anyone can produce a plausible story about why a material failed. The
+            expensive mistake is acting on the wrong one.
+          </p>
+          <p class="muted">
+            We work the way a good laboratory works: state the candidate mechanisms
+            explicitly, design the smallest set of measurements that can discriminate
+            between them, and let the data eliminate the losers. You see the reasoning,
+            not just the conclusion &mdash; which means your team can defend it to a
+            customer, a regulator or a court without us in the room.
+          </p>
+          <ul class="deliverables">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              <span>Every claim traced to a specific measurement, instrument and date</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              <span>Alternative explanations documented and explicitly ruled out</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 13 4 4L19 7"/></svg>
+              <span>Raw data handed over with the report &mdash; it is yours, not ours</span>
+            </li>
+          </ul>
+          <div>
+            <a class="link" href="capabilities.html">
+              Full capability detail
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Industries                                                            -->
+  <!-- ===================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head section-head--split" data-reveal>
+        <div>
+          <p class="eyebrow">Industries</p>
+          <h2>Six sectors. One underlying discipline.</h2>
+        </div>
+        <p class="lede">
+          The physics does not change between a wafer and a wind blade. The failure
+          modes, the standards and the commercial pressures very much do.
+        </p>
+      </div>
+
+      <div class="industry-grid" data-reveal-group>
+
+        <article class="industry" style="--sector: var(--sig-semi)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Semiconductors</span>
+            <span class="art art--semiconductors" role="img" aria-label="Patterned 300 millimetre wafer showing a die array, orientation notch and thin-film interference rings."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Semiconductors &amp; microelectronics</h3>
+            <p>
+              Thin-film integration, contamination control, packaging stress and the
+              yield excursions that appear three lots after a process change.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Yield excursion</span>
+              <span class="chip">Thin films</span>
+              <span class="chip">Packaging</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#semiconductors"><span class="sr-only">Semiconductors and microelectronics</span></a>
+        </article>
+
+        <article class="industry" style="--sector: var(--sig-solar)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Photovoltaics</span>
+            <span class="art art--solar" role="img" aria-label="Solar cell cross-section with metallisation fingers, p-n junction and external quantum efficiency curve."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Solar &amp; photovoltaics</h3>
+            <p>
+              Cell and module efficiency loss, encapsulant degradation, PID and the
+              25-year warranty you signed against a 3-year test.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Degradation</span>
+              <span class="chip">Encapsulants</span>
+              <span class="chip">Field returns</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#photovoltaics"><span class="sr-only">Solar and photovoltaics</span></a>
+        </article>
+
+        <article class="industry" style="--sector: var(--sig-batt)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Energy storage</span>
+            <span class="art art--batteries" role="img" aria-label="Lithium-ion electrode stack showing current collectors, active-material particles, separator and a discharge voltage profile."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Batteries &amp; energy storage</h3>
+            <p>
+              Electrode formulation, capacity fade, gas evolution, coating defects and
+              the gap between coin-cell data and a shipping pack.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Capacity fade</span>
+              <span class="chip">Electrode coating</span>
+              <span class="chip">Safety</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#batteries"><span class="sr-only">Batteries and energy storage</span></a>
+        </article>
+
+        <article class="industry" style="--sector: var(--sig-chem)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Chemicals</span>
+            <span class="art art--chemicals" role="img" aria-label="Process flow diagram with stirred reactor, heat exchanger, distillation column and recycle loop."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Specialty chemicals</h3>
+            <p>
+              Reaction development, impurity tracking, solvent replacement and the
+              scale-up that behaves nothing like the laboratory promised.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Scale-up</span>
+              <span class="chip">Impurities</span>
+              <span class="chip">Green chemistry</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#chemicals"><span class="sr-only">Specialty chemicals</span></a>
+        </article>
+
+        <article class="industry" style="--sector: var(--sig-adhesive)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Adhesives</span>
+            <span class="art art--adhesives" role="img" aria-label="Adhesive bond line cross-section with substrates, fillet, entrapped void, contact angle detail and peel force trace."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Adhesives, sealants &amp; coatings</h3>
+            <p>
+              Surface energy and adhesion failure, cure kinetics, bond-line control and
+              durability under humidity, heat and load.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Adhesion failure</span>
+              <span class="chip">Cure kinetics</span>
+              <span class="chip">Surface prep</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#adhesives"><span class="sr-only">Adhesives, sealants and coatings</span></a>
+        </article>
+
+        <article class="industry" style="--sector: var(--sig-composite)" data-reveal>
+          <div class="industry__figure">
+            <span class="industry__tag">Composites</span>
+            <span class="art art--composites" role="img" aria-label="Composite laminate layup showing quasi-isotropic ply orientations, plain-weave fabric and fibre cross-section."></span>
+          </div>
+          <div class="industry__body">
+            <h3>Composites &amp; advanced structures</h3>
+            <p>
+              Resin infusion and cure, porosity, interlaminar strength, and joints where
+              a composite has to meet a metal.
+            </p>
+            <div class="industry__meta">
+              <span class="chip">Porosity</span>
+              <span class="chip">Cure cycle</span>
+              <span class="chip">Joint design</span>
+            </div>
+          </div>
+          <a class="stretched" href="industries.html#composites"><span class="sr-only">Composites and advanced structures</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Approach                                                              -->
+  <!-- ===================================================================== -->
+  <section class="section section--inverse">
+    <div class="container">
+      <div class="section-head section-head--split" data-reveal>
+        <div>
+          <p class="eyebrow eyebrow--inverse">Engagement</p>
+          <h2>How an engagement actually runs.</h2>
+        </div>
+        <p class="lede">
+          Four stages, each with a written output you can act on. If stage one shows
+          the problem is not ours to solve, we tell you and stop there.
+        </p>
+      </div>
+
+      <div class="process">
+        <div class="process__step">
+          <span class="process__num">Stage 01</span>
+          <h3>Technical intake</h3>
+          <p>
+            A 60-minute call with the engineers who will do the work. You bring the
+            symptoms, the history and whatever data exists. We leave with a candidate
+            mechanism list.
+          </p>
+        </div>
+        <div class="process__step">
+          <span class="process__num">Stage 02</span>
+          <h3>Scoped proposal</h3>
+          <p>
+            A written plan: the hypotheses to be tested, the analytical methods, the
+            laboratories, the timeline and a fixed fee. Nothing starts until you sign it.
+          </p>
+        </div>
+        <div class="process__step">
+          <span class="process__num">Stage 03</span>
+          <h3>Investigation</h3>
+          <p>
+            Sample preparation, measurement, modelling. Weekly written updates &mdash;
+            including the results that do not support the leading hypothesis.
+          </p>
+        </div>
+        <div class="process__step">
+          <span class="process__num">Stage 04</span>
+          <h3>Report &amp; handover</h3>
+          <p>
+            Mechanism, evidence, recommended corrective action and the residual risk we
+            could not close. Raw data included. A debrief with your team, not a slide deck.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-7" data-reveal>
+        <a class="btn btn--on-inverse btn--lg" href="about.html">
+          Read our engagement terms
+          <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Metrics + quote                                                       -->
+  <!-- ===================================================================== -->
+  <section class="section">
+    <div class="container">
+      <div class="metrics" data-reveal-group>
+        <div class="metric" data-reveal>
+          <span class="metric__value" data-count-to="140" data-count-suffix="+">140+</span>
+          <span class="metric__label">Technical investigations delivered across six manufacturing sectors</span>
+        </div>
+        <div class="metric" data-reveal>
+          <span class="metric__value" data-count-to="18" data-count-suffix=" yrs">18 yrs</span>
+          <span class="metric__label">Median hands-on industry experience of the engineers on your project</span>
+        </div>
+        <div class="metric" data-reveal>
+          <span class="metric__value" data-count-to="92" data-count-suffix="%">92%</span>
+          <span class="metric__label">Of engagements close with a root cause the client's team could reproduce</span>
+        </div>
+        <div class="metric" data-reveal>
+          <span class="metric__value" data-count-to="0" data-count-prefix="&pound;" data-count-suffix="">&pound;0</span>
+          <span class="metric__label">Charged before a written, fixed-fee scope is agreed and signed</span>
+        </div>
+      </div>
+
+      <hr class="rule mt-7">
+
+      <figure class="quote mt-7" data-reveal>
+        <blockquote>
+          &ldquo;They spent the first week telling us which of our own theories were
+          wrong. That was uncomfortable, and it was the most valuable week of the
+          project.&rdquo;
+        </blockquote>
+        <figcaption>
+          <strong>Head of Process Engineering</strong>
+          Tier-one automotive battery supplier &#183; capacity-fade investigation
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- Insights                                                              -->
+  <!-- ===================================================================== -->
+  <section class="section section--subtle">
+    <div class="container">
+      <div class="section-head section-head--split" data-reveal>
+        <div>
+          <p class="eyebrow">Insights</p>
+          <h2>Notes from the laboratory.</h2>
+        </div>
+        <p class="lede">
+          Short technical pieces on the failure modes and methods we keep meeting.
+          Written for engineers, not for search engines.
+        </p>
+      </div>
+
+      <div class="article-list" data-reveal>
+        <article class="article">
+          <span class="article__meta">Adhesives</span>
+          <div>
+            <h3>Why your adhesion test passes and your product still delaminates</h3>
+            <p>
+              Lap shear measures the wrong thing for most field failures. A short argument
+              for peel, wedge and humidity-cycled testing instead.
+            </p>
+          </div>
+          <span class="article__read">7 min</span>
+          <a class="stretched" href="insights.html"><span class="sr-only">Read: Why your adhesion test passes and your product still delaminates</span></a>
+        </article>
+
+        <article class="article">
+          <span class="article__meta">Batteries</span>
+          <div>
+            <h3>Coin cells lie: what actually changes at pouch and pack scale</h3>
+            <p>
+              Electrolyte volume, stack pressure and thermal gradients are absent from
+              coin-cell data &mdash; and they dominate cycle life.
+            </p>
+          </div>
+          <span class="article__read">9 min</span>
+          <a class="stretched" href="insights.html"><span class="sr-only">Read: Coin cells lie</span></a>
+        </article>
+
+        <article class="article">
+          <span class="article__meta">Method</span>
+          <div>
+            <h3>Designing an analytical campaign that can actually falsify something</h3>
+            <p>
+              Most failure investigations collect data that is consistent with every
+              hypothesis. Here is how to design one that discriminates.
+            </p>
+          </div>
+          <span class="article__read">11 min</span>
+          <a class="stretched" href="insights.html"><span class="sr-only">Read: Designing an analytical campaign</span></a>
+        </article>
+      </div>
+
+      <div class="mt-6" data-reveal>
+        <a class="link" href="insights.html">
+          All insights
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CTA                                                                   -->
+  <!-- ===================================================================== -->
+  <section class="cta-band">
+    <span class="art art--semiconductors cta-band__grid" aria-hidden="true"></span>
+    <div class="container">
+      <div class="cta-band__inner">
+        <div>
+          <h2>Tell us what broke.</h2>
+          <p>
+            Send the symptoms and whatever data you have. A senior engineer reads every
+            enquiry and replies within two working days &mdash; with a real technical
+            opinion, or an honest referral elsewhere.
+          </p>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="contact.html">
+            Start a conversation
+            <svg class="arrow" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--on-inverse btn--lg" href="mailto:enquiries@greenchemx.com">Email us directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M16 3 28 10v14L16 31 4 24V10z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <circle cx="16" cy="17" r="3.4" fill="currentColor"/>
+          </svg>
+          <span class="brand__name">GreenChem<em>X</em></span>
+        </a>
+        <p>
+          Independent technical consulting in materials science, chemistry and chemical
+          engineering. Evidence-led, fixed-scope, senior-only.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h2>Capabilities</h2>
+        <ul>
+          <li><a href="capabilities.html#failure-analysis">Failure analysis</a></li>
+          <li><a href="capabilities.html#formulation">Formulation</a></li>
+          <li><a href="capabilities.html#scale-up">Process scale-up</a></li>
+          <li><a href="capabilities.html#reliability">Reliability</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2>Industries</h2>
+        <ul>
+          <li><a href="industries.html#semiconductors">Semiconductors</a></li>
+          <li><a href="industries.html#photovoltaics">Photovoltaics</a></li>
+          <li><a href="industries.html#batteries">Energy storage</a></li>
+          <li><a href="industries.html#composites">Composites</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2>Firm</h2>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:enquiries@greenchemx.com">enquiries@greenchemx.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span data-year>2026</span> GreenChemX. All rights reserved.</span>
+      <span class="mono">Confidentiality assured &#183; NDA before first technical call</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

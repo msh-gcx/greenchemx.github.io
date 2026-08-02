@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="comp-title comp-desc" preserveAspectRatio="xMidYMid slice">
+  <title id="comp-title">Composite laminate layup with woven fabric and fibre cross-section</title>
+  <desc id="comp-desc">Abstract technical illustration of a carbon-fibre laminate: exploded ply stack with quasi-isotropic orientations, plain-weave fabric detail, and a resin-impregnated fibre cross-section showing packing.</desc>
+
+  <defs>
+    <linearGradient id="cp-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.11"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.02"/>
+    </linearGradient>
+    <pattern id="cp-tow" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M0 0v12" stroke="currentColor" stroke-opacity="0.34" stroke-width="4"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#cp-bg)"/>
+
+  <!-- Exploded ply stack, quasi-isotropic -->
+  <g>
+    <!-- 0 deg -->
+    <g transform="translate(120 66)">
+      <path d="M0 40 210 0l210 40-210 40z" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5">
+        <path d="M42 32 252 -8M70 38 280 -2M98 44 308 4M126 50 336 10M154 56 364 16"/>
+      </g>
+      <text x="446" y="46" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="1.2" fill="currentColor" fill-opacity="0.6">0&#176;</text>
+    </g>
+    <!-- +45 deg -->
+    <g transform="translate(120 130)">
+      <path d="M0 40 210 0l210 40-210 40z" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5">
+        <path d="M104 8 34 42M146 4 76 38M188 8 118 42M230 12 160 46M272 16 202 50M314 20 244 54"/>
+      </g>
+      <text x="446" y="46" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="1.2" fill="currentColor" fill-opacity="0.6">+45&#176;</text>
+    </g>
+    <!-- 90 deg -->
+    <g transform="translate(120 194)">
+      <path d="M0 40 210 0l210 40-210 40z" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5">
+        <path d="M56 30 126 64M98 26 168 60M140 22 210 56M182 18 252 52M224 14 294 48M266 10 336 44"/>
+      </g>
+      <text x="446" y="46" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="1.2" fill="currentColor" fill-opacity="0.6">90&#176;</text>
+    </g>
+    <!-- -45 deg -->
+    <g transform="translate(120 258)">
+      <path d="M0 40 210 0l210 40-210 40z" fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"/>
+      <g stroke="currentColor" stroke-opacity="0.42" stroke-width="1.5">
+        <path d="M42 32 252 -8M84 36 294 -4M126 40 336 0M168 44 378 4"/>
+      </g>
+      <text x="446" y="46" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="12" letter-spacing="1.2" fill="currentColor" fill-opacity="0.6">&#8722;45&#176;</text>
+    </g>
+  </g>
+
+  <!-- Stack callout -->
+  <g stroke="currentColor" stroke-opacity="0.4" stroke-width="1">
+    <path d="M100 110v212M94 110h12M94 322h12"/>
+  </g>
+  <text x="86" y="216" text-anchor="middle" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="11" letter-spacing="1.2" fill="currentColor" fill-opacity="0.55" transform="rotate(-90 86 216)">[0/+45/90/&#8722;45]s</text>
+
+  <!-- Plain weave detail -->
+  <g transform="translate(540 78)">
+    <rect x="-10" y="-10" width="196" height="196" fill="none" stroke="currentColor" stroke-opacity="0.3" stroke-width="1"/>
+    <g>
+      <rect x="0" y="0" width="176" height="20" fill="url(#cp-tow)" opacity="0.9"/>
+      <rect x="0" y="44" width="176" height="20" fill="url(#cp-tow)" opacity="0.9"/>
+      <rect x="0" y="88" width="176" height="20" fill="url(#cp-tow)" opacity="0.9"/>
+      <rect x="0" y="132" width="176" height="20" fill="url(#cp-tow)" opacity="0.9"/>
+    </g>
+    <g>
+      <rect x="0" y="0" width="20" height="176" fill="currentColor" fill-opacity="0.26"/>
+      <rect x="44" y="0" width="20" height="176" fill="currentColor" fill-opacity="0.26"/>
+      <rect x="88" y="0" width="20" height="176" fill="currentColor" fill-opacity="0.26"/>
+      <rect x="132" y="0" width="20" height="176" fill="currentColor" fill-opacity="0.26"/>
+    </g>
+    <!-- Over-under crossings restore the weave read -->
+    <g fill="currentColor" fill-opacity="0.4">
+      <rect x="0" y="0" width="20" height="20"/><rect x="44" y="44" width="20" height="20"/>
+      <rect x="88" y="0" width="20" height="20"/><rect x="132" y="44" width="20" height="20"/>
+      <rect x="0" y="88" width="20" height="20"/><rect x="44" y="132" width="20" height="20"/>
+      <rect x="88" y="88" width="20" height="20"/><rect x="132" y="132" width="20" height="20"/>
+    </g>
+    <text x="-10" y="-20" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.3" fill="currentColor" fill-opacity="0.5">2&#215;2 PLAIN WEAVE</text>
+  </g>
+
+  <!-- Fibre cross-section (resin + packing) -->
+  <g transform="translate(540 306)">
+    <rect x="-10" y="-10" width="196" height="118" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-opacity="0.3" stroke-width="1"/>
+    <g fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.5">
+      <circle cx="14" cy="14" r="10"/><circle cx="42" cy="26" r="10"/><circle cx="70" cy="12" r="10"/>
+      <circle cx="98" cy="26" r="10"/><circle cx="126" cy="12" r="10"/><circle cx="154" cy="26" r="10"/>
+      <circle cx="14" cy="52" r="10"/><circle cx="42" cy="64" r="10"/><circle cx="70" cy="50" r="10"/>
+      <circle cx="98" cy="64" r="10"/><circle cx="126" cy="50" r="10"/><circle cx="154" cy="64" r="10"/>
+      <circle cx="28" cy="90" r="10"/><circle cx="84" cy="90" r="10"/><circle cx="140" cy="90" r="10"/>
+    </g>
+    <text x="-10" y="-20" font-family="ui-monospace, 'JetBrains Mono', monospace" font-size="10" letter-spacing="1.3" fill="currentColor" fill-opacity="0.5">Vf 58% &#183; 7 &#181;m FILAMENT</text>
+  </g>
+</svg>
